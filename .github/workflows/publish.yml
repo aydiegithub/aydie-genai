@@ -1,0 +1,52 @@
+# GitHub Actions workflow for building and publishing a Python package to PyPI
+
+name: Publish Python Package to PyPI
+
+# This workflow is triggered whenever a new release is created on GitHub.
+# It will not run on pushes or pull requests to the main branch.
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository code
+      # This step downloads your repository into the runner, allowing the job to access it.
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      # This step sets up a specific version of Python for the job.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9' # You can change this to your preferred Python version
+
+      # 3. Install build dependencies
+      # This step installs the necessary tools for building and uploading your package:
+      # - 'build': A modern tool for building Python packages.
+      # - 'twine': The standard tool for uploading packages to PyPI.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+
+      # 4. Build the package
+      # This step runs the 'build' tool, which creates the source distribution (sdist)
+      # and wheel (bdist_wheel) files in a 'dist/' directory.
+      - name: Build package
+        run: python -m build
+
+      # 5. Publish the package to PyPI
+      # This is the final step that uploads the built package to the Python Package Index.
+      # It uses a trusted GitHub Action from the Python Packaging Authority (PyPA).
+      - name: Publish package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # The password is the API token you generate on PyPI.
+          # It is securely stored as a secret in your GitHub repository settings.
+          password: ${{ secrets.PYPI_API_TOKEN }}
