@@ -28,6 +28,7 @@ setuptools.setup(
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
     description=DESCRIPTION, 
+    license=LISCENCE,
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_GITHUB_USER_NAME}/{REPO_NAME}",
