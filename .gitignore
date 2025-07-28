@@ -207,3 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 .venv
+aydie_genai.egg-info/
