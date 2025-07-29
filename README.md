@@ -1,18 +1,15 @@
 # aydie_genai
 
 <p align="center">
-  <img src="banner.jpg" alt="aydie_genai Banner" width="700">
+  <img src="https://aydie.in/banner.jpg" alt="aydie_genai Banner" width="700">
 </p>
 
 <p align="center">
-  <i>A simple, unified, and powerful Python library for generative AI.</i>
+  <h3><strong>A simple, unified, and powerful Python library for generative AI.</strong></h3>
 </p>
 
 <p align="center">
-    <a href="https://pypi.org/project/aydie-genai/"><img src="https://img.shields.io/pypi/v/aydie-genai.svg?style=for-the-badge&logo=pypi&color=blue" alt="PyPI version"></a>
-    <a href="https://pypi.org/project/aydie-genai/"><img src="https://img.shields.io/pypi/dm/aydie-genai.svg?style=for-the-badge&color=green" alt="PyPI downloads"></a>
     <a href="https://github.com/aydie/aydie_genai/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/aydie-genai.svg?style=for-the-badge&color=lightgrey" alt="License"></a>
-    <a href="https://github.com/aydie/aydie_genai/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/aydie/aydie_genai/ci.yml?branch=main&style=for-the-badge&logo=github" alt="Build Status"></a>
 </p>
 
 ---

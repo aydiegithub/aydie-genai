@@ -13,7 +13,7 @@ def get_requirements(file_path: str) -> list[str]:
             requirements.remove("-e .")
     return requirements
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 REPO_NAME = "aydie-genai"
 AUTHOR = "Aditya (Aydie) Dinesh K"
 AUTHOR_GITHUB_USER_NAME = "aydiegithub" 
