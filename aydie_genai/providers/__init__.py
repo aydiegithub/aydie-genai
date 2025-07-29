@@ -6,7 +6,7 @@ from .openai_provider import OpenAIProvider
 from .claude_provider import ClaudeProvider
 from .groq_provider import GroqProvider
 from .deepseek_provider import DeepseekProvider
-from .mistral_provider import MistralProvider
+# from .mistral_provider import MistralProvider
 
 # Define the public API for the 'providers' sub-package.
 # When a user does `from aydie_genai.providers import *`, only these names

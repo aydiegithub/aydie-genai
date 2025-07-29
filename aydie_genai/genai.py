@@ -10,7 +10,7 @@ from .providers.openai_provider import OpenAIProvider
 from .providers.claude_provider import ClaudeProvider
 from .providers.groq_provider import GroqProvider
 from .providers.deepseek_provider import DeepseekProvider
-from .providers.mistral_provider import MistralProvider
+# from .providers.mistral_provider import MistralProvider
 
 
 # Provider Class Mapping
@@ -22,7 +22,7 @@ PROVIDER_CLASSES: Dict[str, Type[BaseProvider]] = {
     "claude": ClaudeProvider,
     "groq": GroqProvider,
     "deepseek": DeepseekProvider,
-    "mistral": MistralProvider,
+    # "mistral": MistralProvider,
 }
 
 

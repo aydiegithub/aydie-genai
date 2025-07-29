@@ -14,30 +14,38 @@ MODEL_PROVIDER_MAP: Dict[str, Dict[str, Any]] = {
     "gemini-1.5-pro": {"provider": "gemini", "api_key_var": "GOOGLE_API_KEY"},
     "gemini-1.5-flash": {"provider": "gemini", "api_key_var": "GOOGLE_API_KEY"},
     "gemini-1.0-pro": {"provider": "gemini", "api_key_var": "GOOGLE_API_KEY"},
+    "gemini-2.5-flash": {"provider": "gemini", "api_key_var": "GOOGLE_API_KEY"},
+    "gemini-2.5-pro": {"provider": "gemini", "api_key_var": "GOOGLE_API_KEY"},
     
     # OpenAI
     "gpt-4o": {"provider": "openai", "api_key_var": "OPENAI_API_KEY"},
     "gpt-4-turbo": {"provider": "openai", "api_key_var": "OPENAI_API_KEY"},
     "gpt-3.5-turbo": {"provider": "openai", "api_key_var": "OPENAI_API_KEY"},
+    "gpt-4.1": {"provider": "openai", "api_key_var": "OPENAI_API_KEY"},
+    "gpt-4.1-mini": {"provider": "openai", "api_key_var": "OPENAI_API_KEY"},
 
     # Anthropic Claude
     "claude-3-opus-20240229": {"provider": "claude", "api_key_var": "ANTHROPIC_API_KEY"},
     "claude-3-sonnet-20240229": {"provider": "claude", "api_key_var": "ANTHROPIC_API_KEY"},
     "claude-3-haiku-20240307": {"provider": "claude", "api_key_var": "ANTHROPIC_API_KEY"},
+    "claude-3.5-sonnet": {"provider": "claude", "api_key_var": "ANTHROPIC_API_KEY"},
 
     # Groq
     "llama3-70b-8192": {"provider": "groq", "api_key_var": "GROQ_API_KEY"},
     "llama3-8b-8192": {"provider": "groq", "api_key_var": "GROQ_API_KEY"},
     "mixtral-8x7b-32768": {"provider": "groq", "api_key_var": "GROQ_API_KEY"},
+    "llama3-70b-131k": {"provider": "groq", "api_key_var": "GROQ_API_KEY"},
 
     # DeepSeek
     "deepseek-chat": {"provider": "deepseek", "api_key_var": "DEEPSEEK_API_KEY"},
     "deepseek-coder": {"provider": "deepseek", "api_key_var": "DEEPSEEK_API_KEY"},
+    "deepseek-v2-chat": {"provider": "deepseek", "api_key_var": "DEEPSEEK_API_KEY"},
 
     # MistralAI
     "mistral-large-latest": {"provider": "mistral", "api_key_var": "MISTRAL_API_KEY"},
     "mistral-small-latest": {"provider": "mistral", "api_key_var": "MISTRAL_API_KEY"},
     "open-mixtral-8x7b": {"provider": "mistral", "api_key_var": "MISTRAL_API_KEY"},
+    "mistral-medium-latest": {"provider": "mistral", "api_key_var": "MISTRAL_API_KEY"},
 }
 
 

@@ -29,14 +29,13 @@
 
 ## 🤖 Supported Models
 
-| Provider      | Supported Models                                                                                               | Environment Variable  |
-|---------------|----------------------------------------------------------------------------------------------------------------|-----------------------|
-| **Google** | `gemini-1.5-pro`, `gemini-1.5-flash`, `gemini-1.0-pro`                                                           | `GOOGLE_API_KEY`      |
-| **OpenAI** | `gpt-4o`, `gpt-4-turbo`, `gpt-3.5-turbo`                                                                         | `OPENAI_API_KEY`      |
-| **Anthropic** | `claude-3-opus-20240229`, `claude-3-sonnet-20240229`, `claude-3-haiku-20240307`                                   | `ANTHROPIC_API_KEY`   |
-| **Groq** | `llama3-70b-8192`, `llama3-8b-8192`, `mixtral-8x7b-32768`                                                        | `GROQ_API_KEY`        |
-| **DeepSeek** | `deepseek-chat`, `deepseek-coder`                                                                              | `DEEPSEEK_API_KEY`    |
-| **MistralAI** | `mistral-large-latest`, `mistral-small-latest`, `open-mixtral-8x7b`                                              | `MISTRAL_API_KEY`     |
+| Provider      | Supported Models                                                                                                                               | Environment Variable  |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| **Google** | `gemini-1.5-pro`, `gemini-1.5-flash`, `gemini-1.0-pro`, `gemini-2.5-pro`, `gemini-2.5-flash`                                                      | `GOOGLE_API_KEY`      |
+| **OpenAI** | `gpt-4o`, `gpt-4-turbo`, `gpt-3.5-turbo`, `gpt-4.1`, `gpt-4.1-mini`                                                                              | `OPENAI_API_KEY`      |
+| **Anthropic** | `claude-3-opus-20240229`, `claude-3-sonnet-20240229`, `claude-3-haiku-20240307`, `claude-3.5-sonnet`                                              | `ANTHROPIC_API_KEY`   |
+| **Groq** | `llama3-70b-8192`, `llama3-8b-8192`, `mixtral-8x7b-32768`, `llama3-70b-131k`                                                                      | `GROQ_API_KEY`        |
+| **DeepSeek** | `deepseek-chat`, `deepseek-coder`, `deepseek-v2-chat`                                                                                            | `DEEPSEEK_API_KEY`    |
 
 ## 🚀 Installation
 
@@ -58,7 +57,7 @@ GOOGLE_API_KEY="your_google_api_key"
 OPENAI_API_KEY="your_openai_api_key"
 ANTHROPIC_API_KEY="your_anthropic_api_key"
 GROQ_API_KEY="your_groq_api_key"
-# ...and so on for other providers
+DEEPSEEK_API_KEY="your_deepseek_api_key"
 ```
 
 ### 2. Generate a Response
