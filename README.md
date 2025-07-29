@@ -19,7 +19,7 @@
 
 `aydie_genai` is a Python library designed to eliminate the complexity of working with multiple Generative AI models. Instead of writing different code for Gemini, OpenAI, Claude, Groq, and others, you can use one simple, unified function to access them all.
 
-## ✨ Key Features
+## Key Features
 
 - **Unified Interface**: A single `generate()` function for all supported models.
 - **Simple & Intuitive**: Get started in minutes. No need to learn multiple SDKs.
@@ -27,7 +27,7 @@
 - **Built-in Documentation**: Rich docstrings provide in-console help via `help(genai.generate)`.
 - **Robust Error Handling**: Custom exceptions for common issues like missing API keys.
 
-## 🤖 Supported Models
+## Supported Models
 
 | Provider      | Supported Models                                                                                                                               | Environment Variable  |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
@@ -37,7 +37,7 @@
 | **Groq** | `llama3-70b-8192`, `llama3-8b-8192`, `mixtral-8x7b-32768`, `llama3-70b-131k`                                                                      | `GROQ_API_KEY`        |
 | **DeepSeek** | `deepseek-chat`, `deepseek-coder`, `deepseek-v2-chat`                                                                                            | `DEEPSEEK_API_KEY`    |
 
-## 🚀 Installation
+## Installation
 
 Install `aydie_genai` directly from PyPI:
 
@@ -83,7 +83,7 @@ response_openai = genai.generate(
 print("\nOpenAI says:", response_openai)
 ```
 
-## 🛠️ Function Parameters
+## Function Parameters
 
 The `genai.generate()` function accepts the following parameters:
 
@@ -97,24 +97,24 @@ The `genai.generate()` function accepts the following parameters:
 | `top_p`              | `float` | Nucleus sampling parameter. Defaults to `1.0`.                                                          |
 | `api_key`            | `str`   | Directly pass an API key, overriding the environment variable. Defaults to `None`.                      |
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Whether it's adding new models, improving documentation, or fixing bugs, your help is appreciated. Please feel free to open an issue or submit a pull request.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🔗 Connect with Me
+## Connect with Me
 
 <p align="center">
-  <a href="https://aydie.in" target="_blank">🌐 Website</a> |
-  <a href="https://www.linkedin.com/in/aydiemusic" target="_blank">💼 LinkedIn</a> |
-  <a href="https://x.com/aydiemusic" target="_blank">🐦 X (Twitter)</a> |
-  <a href="https://instagram.com/aydiemusic" target="_blank">📸 Instagram</a> |
-  <a href="https://youtube.com/@aydiemusic" target="_blank">📺 YouTube</a> |
-  <a href="https://gitlab.com/aydie" target="_blank">📦 GitLab</a> |
-  <a href="mailto:business@aydie.in">📧 Contact</a>
+  <a href="https://aydie.in" target="_blank"><img src="https://img.shields.io/badge/Website-aydie.in-blue?logo=googlechrome" alt="Website"></a>
+  <a href="https://www.linkedin.com/in/aydiemusic" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin" alt="LinkedIn"></a>
+  <a href="https://x.com/aydiemusic" target="_blank"><img src="https://img.shields.io/badge/X-Twitter-black?logo=x" alt="Twitter"></a>
+  <a href="https://instagram.com/aydiemusic" target="_blank"><img src="https://img.shields.io/badge/Instagram-Profile-e4405f?logo=instagram" alt="Instagram"></a>
+  <a href="https://youtube.com/@aydiemusic" target="_blank"><img src="https://img.shields.io/badge/YouTube-Channel-ff0000?logo=youtube" alt="YouTube"></a>
+  <a href="https://gitlab.com/aydie" target="_blank"><img src="https://img.shields.io/badge/GitLab-Profile-fca121?logo=gitlab" alt="GitLab"></a>
+  <a href="mailto:business@aydie.in"><img src="https://img.shields.io/badge/Email-business@aydie.in-lightgrey?logo=gmail" alt="Email"></a>
 </p>
