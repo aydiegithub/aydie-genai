@@ -1,5 +1,6 @@
-import mistralai
+from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
+from mistralai.exceptions import MistralAPIException
 from typing import Optional, List
 
 from .base_provider import BaseProvider
@@ -18,7 +19,7 @@ class MistralProvider(BaseProvider):
         Initializes the MistralAI API client using the provided API key.
         """
         try:
-            self.client = mistralai.MistralClient(api_key=self.api_key)
+            self.client = MistralClient(api_key=self.api_key)
         except Exception as e:
             raise AydieException(f"Failed to initialize MistralAI client: {e}")
 
@@ -69,7 +70,7 @@ class MistralProvider(BaseProvider):
             else:
                 raise AydieException("Received a malformed response from MistralAI API.")
 
-        except mistralai.exceptions.MistralAPIException as e:
+        except MistralAPIException as e:
             # Catch specific MistralAI API errors for better feedback
             raise AydieException(f"MistralAI API error: {e}")
         except Exception as e:
