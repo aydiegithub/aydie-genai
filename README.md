@@ -42,7 +42,7 @@ Install `aydie_genai` directly from PyPI:
 pip install aydie-genai
 ```
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Set Up Your API Keys
 
